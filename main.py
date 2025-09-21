@@ -193,5 +193,6 @@ async def deafen(ctx, member: discord.Member):
             await ctx.send(f"{member.display_name} has been deafened.")
         else:
             await ctx.send(f"{member.display_name} is not in your VC.")
-
-bot.run("MTQxOTEwMzIyNDg5NTYzNTYzMA.G1WA29.NH5M91qRr3gzQ_SjBAf8rnNFB0s8-u4Wa2q37U")  # Replace with your actual bot token
+import os
+token = os.getenv("BOT_TOKEN")
+bot.run(token)
